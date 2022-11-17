@@ -1,0 +1,86 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+}
+
+#game {
+    height: 620px;
+    width: 500px;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 5px;
+    background-image: url(road.png);
+    background-size: contain;
+    overflow: hidden;
+}
+
+#car {
+    height: 100px;
+    width: 100px;
+    background-image: url(car.png);
+    background-color: black;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: 0;
+    left: 0px;
+    animation: move 3s linear infinite;
+}
+
+@keyframes move {
+    0% {
+        top: 0px;
+    }
+
+    100% {
+        top: 620px;
+    }
+}
+
+#jeep {
+    height: 100px;
+    width: 120px;
+    background-image: url(jeep.png);
+    background-color: blue;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: 350px;
+    left: 0px
+}
+
+#result {
+    color: white;
+    height: 200px;
+    width: 400px;
+    background-color: rgb(97, 97, 180);
+    margin: 1rem auto;
+    border-radius: 20px;
+    font-size: 30px;
+    text-align: center;
+    display: none;
+}
+
+#result h1 {
+    margin-top: 30%;
+}
+
+button {
+    border: none;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+    margin-left: 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: red;
+}
